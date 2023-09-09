@@ -198,6 +198,10 @@ border-radius: 4px;
     gap: 24px;
 }
 
+.ways-to-achieve-list {
+    width: calc((100% - 72px) / 4);
+}
+
 .visually-hidden-link {
     color:var(--c-background-bright);
     font-size: 20px;
@@ -205,7 +209,7 @@ border-radius: 4px;
 line-height: 1.2;
 letter-spacing: 0.02em;
 margin-bottom: 8px;
-width: calc((100% - 72px) / 4);
+
 }
 .visually-hidden-text {
     color: var(--c-info);
