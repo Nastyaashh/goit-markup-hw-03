@@ -30,6 +30,7 @@ body {
     align-items: center;
     justify-content: space-between;
     gap: 40px;
+    border-bottom: 1px solid var(--c-border-portfolio-color);
 }
 
 .header-nav {
