@@ -8,6 +8,7 @@
     --c-hero-light: #FFF; 
     --c-button-primary: #4D5AE5; 
     --c-button-secondary: #7434eb; 
+    --c-border-portfolio-color: #E7E9FC; 
 }
 
 body {
@@ -16,8 +17,48 @@ body {
     font-family: 'Roboto', sans-serif;
 }
 
-/* Top line */
+/* Header */
+
+.container {
+    max-width: 1440px;
+    margin: 0, auto;
+    padding: 0 40px;
+}
+
+.header-inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+}
+
+.header-nav {
+    display: flex;
+    align-items: center;
+    flex-grow: 1;
+    gap: 40px;
+}
+
+.nav-list {
+    display: flex;
+    gap: 40px;
+    flex-grow: 1;
+    justify-content: center;
+}
+
+.nav-link {
+    display: inline-block;
+    padding: 24px 0;
+}
+
+.address-link {
+    display: flex;
+    gap: 40px;
+}
+
 .logo {
+    display: flex;
+    align-items: center; 
     font-family: Raleway, sans-serif;
     color: var(--c-additional);
     font-size: 18px;
@@ -64,22 +105,60 @@ a {
 }
 ul {
     list-style-type: none;
+    margin: 0;
+    padding: 0;
 }
+
+p, h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+/* END Header */
 
 /* Hero section */
 .hero-section {
     background-color: var(--c-background-bright);
 }
+
+.hero-inner {
+    padding: 188px 472px 292px;
+}
+
 .hero-title {
+    max-width: 496px; 
 color: var(--c-hero-light);
 font-size: 56px;
 line-height: 1.07; 
 letter-spacing: 0.02em;
 text-align: center;
+margin-bottom: 48px;
 }
 button {
     font-family: inherit;
 }
+
+.hero-actions {
+    display: flex;
+    align-items: center;
+}
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+  }
 .button-primary {
     font-weight: 500;
     color: var(--c-hero-light);
@@ -88,16 +167,26 @@ line-height: 1.5;
 letter-spacing: 0.04em;
 border: none;
 cursor: pointer;
+padding: 16px 32px;
+margin: 0 auto;
+border-radius: 4px;
 }
 .button-primary:hover,
 .button-primary:focus {
     color: var(--c-hero-light);
     background-color: var(--c-brand);
 }
+/* END Hero section */
 
 
-
-/* Section advantages */
+/* "Ways to achieve goals" section */
+.ways-to-achieve-section {
+    padding: 120px 0;
+}
+.ways-list {
+    display: flex;
+    gap: 24px;
+}
 
 .visually-hidden-link {
     color:var(--c-background-bright);
@@ -105,6 +194,7 @@ cursor: pointer;
     font-weight: 500;
 line-height: 1.2;
 letter-spacing: 0.02em;
+margin-bottom: 8px;
 }
 .visually-hidden-text {
     color: var(--c-info);
@@ -112,8 +202,9 @@ letter-spacing: 0.02em;
 line-height: 1.5;
 letter-spacing: 0.02em;
 }
+/* END "Ways to achieve goals" section */
 
-/* Sections*/
+/* "Our team" section */
 .header {
     color: var(--c-background-bright);
     background-color: var(--c-background);
@@ -122,8 +213,19 @@ line-height: 1.11;
 letter-spacing: 0.02em;
 text-transform: capitalize;
 text-align: center;
+padding-top: 120px;
+margin-bottom: 72px;
 }
+
+.team-list {
+    display: flex;
+    gap: 24px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
 .header-link {
+    margin-bottom: 120px;
     background-color: var(--c-hero-light);
 }
 .header-naming {
@@ -132,16 +234,46 @@ text-align: center;
 font-weight: 500;
 line-height: 1.2;
 letter-spacing: 0.02em;
+text-align: center;
+margin: 32px 65px 8px;
 }
 .header-text {
     color: var(--c-info);
     font-size: 16px;
 line-height: 1.5;
 letter-spacing: 0.02em;
+text-align: center;
+margin-bottom: 32px;
 }
 .section-team {
     background-color: var(--c-background);
 }
+/* END "Our team" section */
+
+/* "Our portflio" section */
+.header-portfolio {
+    background-color: var(--c-hero-light);
+    color: var(--c-background-bright);
+    font-size: 36px;
+line-height: 1.11;
+letter-spacing: 0.02em;
+text-transform: capitalize;
+text-align: center;
+margin: 120px 0 72px;
+}
+
+.portfolio-list {
+    display: flex;
+    gap: 24px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.portfolio-item {
+    border: 1px solid var(--c-border-portfolio-color);
+    margin-bottom: 120px;
+}
+/* END "Our portflio" section */
 
 /* Footer */
 .footer {
@@ -152,4 +284,14 @@ letter-spacing: 0.02em;
     font-size: 16px;
 line-height: 1.5;
 letter-spacing: 0.02em;
+padding-bottom: 100px;
 }
+.footer-logo {
+    padding: 100px 0 0;
+    margin-bottom: 18px;
+}
+.footer-inner {
+    margin: 100px 0 0 0;
+}
+
+/* END Footer */
