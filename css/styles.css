@@ -19,7 +19,7 @@ body {
 
 /* Header */
 
-.header {
+.top-line {
     border-bottom: 1px solid var(--c-border-portfolio-color);
 }
 .container {
