@@ -9,12 +9,12 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
     <!-- Normalize -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.min.css" integrity="sha512-4xo8blKMVCiXpTaLzQSLSw3KFOVPWhm/TRtuPVc4WG6kUgjH6J03IBuG7JZPkcWMxJ5huwaBpOpnwYElP/m6wg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <!-- Styles -->
 <link rel="stylesheet" href="./css/styles.css">
 </head>
 <body>
-    <header>
+    <header classs="header">
         <div class="container">
             <div class="header-inner">
         <nav class="header-nav">
@@ -68,7 +68,7 @@
         <h2 class="visually-hidden">Ways to achieve the goal</h2>
 
         <ul class="ways-list">
-        <li>
+        <li class="ways-to-achieve-list">
             <h3 class="visually-hidden-link">Strategy</h3>
         <p class="visually-hidden-text">Our goal is to identify the business
             problem to walk away with the perfect and creative solution.</p>
@@ -97,23 +97,31 @@
             <ul class="team-list">
                 <li class="header-link">
                     <img src="./images/Team-card-1.jpg" alt="Mark Guerrero" width="264">
+                    <div class="team-name">
                         <h3 class="header-naming">Mark Guerrero</h3>
-                        <p class="header-text">Product Designer</p>                
+                        <p class="header-text">Product Designer</p> 
+                    </div>               
                 </li>
                 <li class="header-link">
                     <img src="./images/Team-card-2.jpg" alt="Tom Ford" width="264">
+                    <div class="team-name">
                         <h3 class="header-naming">Tom Ford</h3>
                        <p class="header-text">Frontend Developer</p> 
+                    </div>
                 </li>
                 <li class="header-link">
                     <img src="./images/Team-card-3.jpg" alt="Camila Garcia" width="264">
+                    <div class="team-name">
                         <h3 class="header-naming">Camila Garcia</h3>
                        <p class="header-text">Marketing</p> 
+                    </div>
                 </li>
                 <li class="header-link">
                     <img src="./images/Team-card-4.jpg" alt="Daniel Wilson" width="264">
+                    <div class="team-name">
                         <h3 class="header-naming">Daniel Wilson</h3>
                        <p class="header-text">UI Designer</p> 
+                       </div>
                 </li>
             </ul>
         </div>
@@ -126,33 +134,45 @@
                 <ul class="portfolio-list">
                     <li class="portfolio-item">
                         <img src="./images/banking-app-1.jpg" alt="Banking app" width="360" height="300">
+                        <div class="item-text">
                         <h3 class="header-naming">Banking App</h3>
                         <p class="header-text">App</p>
+                    </div>
                     </li>
                     <li class="portfolio-item">
                         <img src="./images/cashless-payment-1.jpg" alt="Cashless payment" width="360" height="300">
+                        <div class="item-text">
                         <h3 class="header-naming">Cashless Payment</h3>
                         <p class="header-text">Marketing</p>
+                    </div>
                     </li>
                     <li class="portfolio-item">
                         <img src="./images/meditation-app-1.jpg" alt="Meditation app" width="360" height="300">
+                        <div class="item-text">
                         <h3 class="header-naming">Meditation App</h3>
                         <p class="header-text">App</p>
+                    </div>
                     </li>
                     <li class="portfolio-item">
                         <img src="./images/taxi-service-1.jpg" alt="Taxi service" width="360" height="300">
+                        <div class="item-text">
                         <h3 class="header-naming">Taxi Service</h3>
                         <p class="header-text">Marketing</p>
+                    </div>
                     </li>
                     <li class="portfolio-item">
                         <img src="./images/screen-illustrations-1.jpg" alt="Screen illustrations" width="360" height="300">
+                        <div class="item-text">
                         <h3 class="header-naming">Screen Illustrations</h3>
                         <p class="header-text">Design</p>
+                    </div>
                     </li>
                     <li class="portfolio-item">
                         <img src="./images/online-courses-1.jpg" alt="Online courses" width="360" height="300">
+                        <div class="item-text">
                         <h3 class="header-naming">Online Courses</h3>
                         <p class="header-text">Marketing</p>
+                    </div>
                     </li>
                 </ul>
             </div>
@@ -164,7 +184,7 @@
         <div class="container">
             <div class="footer-inner">
                 <div class="footer-logo">
-        <a class="logo" href="./index.html"> Web<span class="logo-accent-second">Studio</span></a>
+        <a class="footer-logo" href="./index.html"> Web<span class="logo-accent-second">Studio</span></a>
     </div>
         <p class="footer-text">Increase the flow of customers and
          sales for your business with digital
