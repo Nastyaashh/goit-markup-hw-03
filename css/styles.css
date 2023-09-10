@@ -44,9 +44,6 @@ body {
     gap: 40px;
     flex-grow: 1;
     justify-content: center;
-}
-
-.nav-link {
     padding: 24px 0;
 }
 
