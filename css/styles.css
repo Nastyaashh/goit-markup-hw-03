@@ -27,12 +27,9 @@ body {
     margin: 0 auto;
     padding: 0 15px;
 }
-
-.header-inner {
+.header-container {
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    gap: 40px;
 }
 
 .header-nav {
