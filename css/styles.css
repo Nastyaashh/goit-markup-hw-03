@@ -128,9 +128,7 @@ img {
     justify-content: space-between;
 }
 
-.hero-inner {
-    padding: 0 472px;
-}
+
 
 .hero-title {
 color: var(--c-hero-light);
