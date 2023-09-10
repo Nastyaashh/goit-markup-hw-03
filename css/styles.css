@@ -151,10 +151,6 @@ button {
     font-family: inherit;
 }
 
-.hero-actions {
-    display: flex;
-    align-items: center;
-}
 
 .visually-hidden {
     position: absolute;
@@ -168,7 +164,7 @@ button {
     clip: rect(0 0 0 0);
     overflow: hidden;
   }
-.button-primary {
+.hero-button {
     display: block;
     min-width: 169px;
     height: 56px;
@@ -182,6 +178,7 @@ cursor: pointer;
 padding: 16px 32px;
 margin: 0 auto;
 border-radius: 4px;
+align-items: center;
 }
 .button-primary:hover,
 .button-primary:focus {
