@@ -47,13 +47,10 @@ body {
 }
 
 .nav-link {
-    padding: 24px 0 24px;
+    padding-top: 24px;
+    padding-bottom: 24px;
 }
 
-.address-link {
-    display: flex;
-    gap: 40px;
-}
 
 .logo {
     display: flex;
@@ -86,12 +83,9 @@ letter-spacing: 0.02em;
 .logo-link:focus {
     color: var(--c-brand);
 }
-.address {
-    display: flex;
-    gap: 40px;
-    font-style: normal;
-}
+
 .address-link {
+    font-style: normal;
     font-size: 16px;
 line-height: 1.5;
 letter-spacing: 0.02em;
@@ -184,6 +178,11 @@ align-items: center;
 .button-primary:focus {
     color: var(--c-hero-light);
     background-color: var(--c-brand);
+}
+
+.address-list {
+    display: flex;
+    gap: 40px;
 }
 /* END Hero section */
 
