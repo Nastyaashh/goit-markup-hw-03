@@ -43,10 +43,12 @@ body {
     display: flex;
     gap: 40px;
     flex-grow: 1;
-    justify-content: center;
-    padding: 24px 0;
+    justify-content: center;   
 }
 
+.nav-link {
+    padding: 24px 0;
+}
 
 .logo {
     display: flex;
